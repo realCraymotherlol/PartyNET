@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarioPartyNET", "MarioPartyNET.csproj", "{05F5A721-6F52-473B-ADC8-79D8759B98CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05F5A721-6F52-473B-ADC8-79D8759B98CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05F5A721-6F52-473B-ADC8-79D8759B98CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05F5A721-6F52-473B-ADC8-79D8759B98CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05F5A721-6F52-473B-ADC8-79D8759B98CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E51CBD1-0577-4503-AF1E-61266FDD9E3A}
+	EndGlobalSection
+EndGlobal
