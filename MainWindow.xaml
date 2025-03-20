@@ -1,17 +1,22 @@
-﻿<Window x:Class="MarioPartyNET.MainWindow"
+﻿<Window Background="#222222" x:Class="MarioPartyNET.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MarioPartyNET"
         mc:Ignorable="d"
-        Title="PartyNET" Height="450" Width="800">
-    <Grid Margin="27,0,24,0" VerticalAlignment="Center" Height="394">
+        Title="MarioParty.NET" Height="600" Width="800">
+    <Grid Margin="24,0,24,0" VerticalAlignment="Center" Height="500">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" BorderBrush="#444444" BorderThickness="2,2,2,0" CornerRadius="3,3,0,0" Margin="0,10,0,115" Grid.RowSpan="2"/>
+        <Border Grid.Row="1" BorderBrush="#444444" BorderThickness="2,1,2,0" Margin="0,10,0,115" Grid.RowSpan="2" />
+        <Border Grid.Row="2" BorderBrush="#444444" BorderThickness="2,1,2,0" Margin="0,10,0,115" Grid.RowSpan="2" />
+        <Border Grid.Row="3" BorderBrush="#444444" BorderThickness="2" CornerRadius="0,0,3,3" Margin="0,10,0,-10"/>
     </Grid>
 </Window>
