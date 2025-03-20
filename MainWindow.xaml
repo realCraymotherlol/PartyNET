@@ -5,45 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MarioPartyNET"
         mc:Ignorable="d"
-        Title="PartyNET" Height="620" Width="800">
-    <Window.Resources>
-        <!-- Styles START -->
-        
-         <!-- TabItems START -->
+        Title="PartyNET" Height="600" Width="800">
+    <Grid Margin="24,28,24,0" VerticalAlignment="Center" Height="500">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="65*"/>
+            <ColumnDefinition Width="263*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
-         <!-- TabItems END -->
-
-        <!--Styles END-->
-    </Window.Resources>
-
-    <Grid>
-        <TabControl x:Name="Tabs" Background="#111111">
-            <TabItem Header="Stats">
-                <Grid Margin="24,28,24,0" VerticalAlignment="Center" Height="460">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="65*"/>
-                        <ColumnDefinition Width="263*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-
-                    <Border Grid.Row="0" BorderBrush="#444444" BorderThickness="2,2,2,0" CornerRadius="3,3,0,0" Background="#230000" Grid.ColumnSpan="2"/>
-                    <Border Grid.Row="1" BorderBrush="#444444" BorderThickness="2,1,2,0" Background="#001423" Grid.ColumnSpan="2"/>
-                    <Border Grid.Row="2" BorderBrush="#444444" BorderThickness="2,1,2,0" Background="#001400" Grid.ColumnSpan="2"/>
-                    <Border Grid.Row="3" BorderBrush="#444444" BorderThickness="2,2,2,2" CornerRadius="0,0,3,2" Background="#231700" Grid.ColumnSpan="2" Height="125" Margin="0,0,0,-10"/>
-                    <Grid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="36" Margin="0,-54,0,0" VerticalAlignment="Top" Width="752">
-                        <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="28" FontWeight="Bold" Foreground="White"><Run Language="nl-nl" Text="Turn:"/></TextBlock>
-                    </Grid>
-                </Grid>
-            </TabItem>
-            <TabItem Header="Scanner">
-                <Grid/>
-            </TabItem>
-        </TabControl>
-
+        <Border Grid.Row="0" BorderBrush="#444444" BorderThickness="2,2,2,0" CornerRadius="3,3,0,0" Background="#230000" Grid.ColumnSpan="2"/>
+        <Border Grid.Row="1" BorderBrush="#444444" BorderThickness="2,1,2,0" Background="#001423" Grid.ColumnSpan="2"/>
+        <Border Grid.Row="2" BorderBrush="#444444" BorderThickness="2,1,2,0" Background="#001400" Grid.ColumnSpan="2"/>
+        <Border Grid.Row="3" BorderBrush="#444444" BorderThickness="2,2,2,2" CornerRadius="0,0,3,2" Background="#231700" Grid.ColumnSpan="2" Height="125"/>
+        <Grid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="56" Margin="0,-56,0,0" VerticalAlignment="Top" Width="752">
+            <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="28" FontWeight="Bold" Foreground="White"><Run Language="nl-nl" Text="Turn:"/></TextBlock>
+        </Grid>
     </Grid>
 </Window>
