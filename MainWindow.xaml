@@ -5,7 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MarioPartyNET"
         mc:Ignorable="d"
-<<<<<<< HEAD
         Title="PartyNET" Height="600" Width="800">
     <TabControl Style="{StaticResource TabControl-Dark}">
         <TabItem Style="{StaticResource TabItem-Dark}" Name="stats" Header="Statistics">
@@ -32,20 +31,4 @@
         <TabItem Style="{StaticResource TabItem-Dark}" Name="settings" Header="Options">
         </TabItem>
     </TabControl>
-=======
-        Title="MarioParty.NET" Height="600" Width="800">
-    <Grid Margin="24,0,24,0" VerticalAlignment="Center" Height="500">
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-
-        <Border Grid.Row="0" BorderBrush="#444444" BorderThickness="2,2,2,0" CornerRadius="3,3,0,0" Margin="0,10,0,115" Grid.RowSpan="2"/>
-        <Border Grid.Row="1" BorderBrush="#444444" BorderThickness="2,1,2,0" Margin="0,10,0,115" Grid.RowSpan="2" />
-        <Border Grid.Row="2" BorderBrush="#444444" BorderThickness="2,1,2,0" Margin="0,10,0,115" Grid.RowSpan="2" />
-        <Border Grid.Row="3" BorderBrush="#444444" BorderThickness="2" CornerRadius="0,0,3,3" Margin="0,10,0,-10"/>
-    </Grid>
->>>>>>> 5375c477f82c622cf80869e30373727773841fc9
 </Window>
