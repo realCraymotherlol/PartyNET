@@ -1,4 +1,4 @@
-﻿<Window Background="#222222" x:Class="MarioPartyNET.MainWindow"
+﻿<Window Background="{StaticResource SecondaryBackground-Dark}" x:Class="MarioPartyNET.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -6,24 +6,29 @@
         xmlns:local="clr-namespace:MarioPartyNET"
         mc:Ignorable="d"
         Title="PartyNET" Height="600" Width="800">
-    <Grid Margin="24,28,24,0" VerticalAlignment="Center" Height="500">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="65*"/>
-            <ColumnDefinition Width="263*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-
-        <Border Grid.Row="0" BorderBrush="#444444" BorderThickness="2,2,2,0" CornerRadius="3,3,0,0" Background="#230000" Grid.ColumnSpan="2"/>
-        <Border Grid.Row="1" BorderBrush="#444444" BorderThickness="2,1,2,0" Background="#001423" Grid.ColumnSpan="2"/>
-        <Border Grid.Row="2" BorderBrush="#444444" BorderThickness="2,1,2,0" Background="#001400" Grid.ColumnSpan="2"/>
-        <Border Grid.Row="3" BorderBrush="#444444" BorderThickness="2,2,2,2" CornerRadius="0,0,3,2" Background="#231700" Grid.ColumnSpan="2" Height="125"/>
-        <Grid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="56" Margin="0,-56,0,0" VerticalAlignment="Top" Width="752">
-            <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="28" FontWeight="Bold" Foreground="White"><Run Language="nl-nl" Text="Turn:"/></TextBlock>
-        </Grid>
-    </Grid>
+    <TabControl Style="{StaticResource TabControl-Dark}">
+        <TabItem Style="{StaticResource TabItem-Dark}" Name="stats" Header="Statistics">
+            <Grid Margin="24,42,24,0" VerticalAlignment="Center" Height="460">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="99*"/>
+                    <ColumnDefinition Width="533*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" Style="{StaticResource PlayerStatsLabel}" CornerRadius="3,3,0,0" Background="#230000" Grid.ColumnSpan="3"/>
+                <Border Grid.Row="1" Style="{StaticResource PlayerStatsLabel}" Background="#00141f" Grid.ColumnSpan="3"/>
+                <Border Grid.Row="2" Style="{StaticResource PlayerStatsLabel}" Background="#001400" Grid.ColumnSpan="3"/>
+                <Border Grid.Row="3" Style="{StaticResource PlayerStatsLabel}" CornerRadius="0,0,3,3" Background="#1d1400" Grid.ColumnSpan="3"/>
+                <Grid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="72" Margin="0,-72,0,0" VerticalAlignment="Top" Width="748">
+                    <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="28" FontWeight="Bold" Foreground="White"><Run Language="nl-nl" Text="Turn:"/></TextBlock>
+                </Grid>
+            </Grid>
+        </TabItem>
+        <TabItem Style="{StaticResource TabItem-Dark}" Name="settings" Header="Options">
+        </TabItem>
+    </TabControl>
 </Window>

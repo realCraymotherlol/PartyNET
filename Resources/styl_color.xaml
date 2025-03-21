@@ -1,0 +1,11 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+    <!-- Black -->
+    <SolidColorBrush x:Key="PrimaryBackground-Dark" Color="#151515"/>
+    <SolidColorBrush x:Key="SecondaryBackground-Dark" Color="#222222"/>
+    <SolidColorBrush x:Key="Outline-Dark" Color="#303030"/>
+    <SolidColorBrush x:Key="UnselectedItem-Dark" Color="#303030"/>
+
+</ResourceDictionary>
