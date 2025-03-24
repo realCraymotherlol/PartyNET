@@ -3,7 +3,7 @@
 
     <Style TargetType="{x:Type Border}" x:Key="PlayerStatsLabel">
         <Setter Property="BorderBrush" Value="{StaticResource Outline-Dark}"/>
-        <Setter Property="BorderThickness" Value="2"/>
+        <Setter Property="BorderThickness" Value="2,2,2,0"/>
     </Style>
 
 </ResourceDictionary>
