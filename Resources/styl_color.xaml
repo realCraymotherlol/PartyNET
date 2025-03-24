@@ -7,5 +7,7 @@
     <SolidColorBrush x:Key="SecondaryBackground-Dark" Color="#222222"/>
     <SolidColorBrush x:Key="Outline-Dark" Color="#303030"/>
     <SolidColorBrush x:Key="UnselectedItem-Dark" Color="#303030"/>
+    <SolidColorBrush x:Key="UnselectedHoverItem-Dark" Color="#3d3d3d"/>
+    <SolidColorBrush x:Key="SelectedItem-Dark" Color="#464646"/>
 
 </ResourceDictionary>

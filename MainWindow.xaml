@@ -6,8 +6,9 @@
         xmlns:local="clr-namespace:MarioPartyNET"
         mc:Ignorable="d"
         Title="PartyNET" Height="600" Width="800">
+
     <TabControl Style="{StaticResource TabControl-Dark}">
-        <TabItem Style="{StaticResource TabItem-Dark}" Name="stats" Header="Statistics">
+        <TabItem Style="{DynamicResource TabItem-Dark}" Header="Statistics" Margin="-2,-2,0,0">
             <Grid Margin="24,42,24,0" VerticalAlignment="Center" Height="460">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="99*"/>
@@ -23,12 +24,16 @@
                 <Border Grid.Row="1" Style="{StaticResource PlayerStatsLabel}" Background="#00141f" Grid.ColumnSpan="3"/>
                 <Border Grid.Row="2" Style="{StaticResource PlayerStatsLabel}" Background="#001400" Grid.ColumnSpan="3"/>
                 <Border Grid.Row="3" Style="{StaticResource PlayerStatsLabel}" CornerRadius="0,0,3,3" Background="#1d1400" Grid.ColumnSpan="3"/>
-                <Grid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="72" Margin="0,-72,0,0" VerticalAlignment="Top" Width="748">
-                    <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="28" FontWeight="Bold" Foreground="White"><Run Language="nl-nl" Text="Turn:"/></TextBlock>
+                <Grid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="69" Margin="0,-69,0,0" VerticalAlignment="Top" Width="748">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="31*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="28" FontWeight="Bold" Foreground="White" Grid.ColumnSpan="2"><Run Language="nl-nl" Text="Turn:"/></TextBlock>
                 </Grid>
             </Grid>
         </TabItem>
-        <TabItem Style="{StaticResource TabItem-Dark}" Name="settings" Header="Options">
+        <TabItem Style="{DynamicResource TabItem-Dark}" Name="settings" Header="Options" Margin="0,-2,-2,0">
         </TabItem>
     </TabControl>
 </Window>
