@@ -1,4 +1,4 @@
-# MarioPartyNET
+# Party.NET
 
 ## Prerequisites
 - .NET 8
