@@ -20,20 +20,25 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Image Grid.Row="0"/> <!--P1-->
-                <Image Grid.Row="1"/> <!--P2-->
-                <Image Grid.Row="2"/> <!--P3-->
-                <Image Grid.Row="3"/> <!--P4-->
                 <Border Grid.Row="0" Style="{StaticResource PlayerStatsLabel}" CornerRadius="3,3,0,0" Background="#230000" Grid.ColumnSpan="3">
                 </Border>
                 <Border Grid.Row="1" Style="{StaticResource PlayerStatsLabel}" Background="#00141f" Grid.ColumnSpan="3"/>
                 <Border Grid.Row="2" Style="{StaticResource PlayerStatsLabel}" Background="#001400" Grid.ColumnSpan="3"/>
                 <Border Grid.Row="3" Style="{StaticResource PlayerStatsLabel}" CornerRadius="0,0,3,3" BorderThickness="2"  Background="#1d1400" Grid.ColumnSpan="3"/>
+                <Image Grid.Row="0" Source="assets/images/mario.png"/>
+                <!--P1-->
+                <Image Grid.Row="1" Source="assets/images/LUIGI.png"/>
+                <!--P2-->
+                <Image Grid.Row="2" Source="assets/images/mario.png"/>
+                <!--P3-->
+                <Image Grid.Row="3" Source="assets/images/LUIGI.png"/>
+                <!--P4-->
                 <Grid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="69" Margin="0,-69,0,0" VerticalAlignment="Top" Width="748">
                     <Grid.ColumnDefinitions>
                     </Grid.ColumnDefinitions>
                     <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="28" FontWeight="Bold" Grid.ColumnSpan="2"><Run Text="Waiting for Dolphin"/><Run Language="nl-nl" Text="/"/><Run Text="Mupe"/><Run Language="nl-nl" Text="n"/><Run Text="..."/></TextBlock>
                 </Grid>
+
             </Grid>
         </TabItem>
         <TabItem Style="{DynamicResource TabItem-Dark}" Name="settings" Header="Options" Margin="0,-2,-2,0">
